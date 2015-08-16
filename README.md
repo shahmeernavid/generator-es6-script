@@ -8,6 +8,7 @@ Yeoman generator for general purpose node scripts compiled from es6. ES6 is comp
     - gulp: `npm install -g gulp`;
 1. Install using npm `npm install generator-es6-script`.
 2. `cd` to the target directory and run `yo es6-script`.
+    - To include sublime text project files, use the `--sublime` flag.
 3. Compile ES6 source with `gulp compile`. Watch for changes with `gulp watch`.
 
 ### Details

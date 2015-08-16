@@ -8,6 +8,12 @@ module.exports = yo.Base.extend({
         };
     },
 
+    constructor: function () {
+        yo.Base.apply(this, arguments);
+
+        this.option('sublime');
+    },
+
     writeTemplates: function () {
         this.copy('src', 'src');
         this.copy('tasks', 'tasks');
@@ -15,6 +21,9 @@ module.exports = yo.Base.extend({
         this.copy('index.js', 'index.js');
         this.copy('_gitignore', '.gitignore');
         this.copy('Gulpfile.js', 'Gulpfile.js');
+        if (this.options.sublime) {
+            this.copy('es6.sublime-project', 'es6.sublime-project');
+        }
     },
 
     dependencies: function () {
