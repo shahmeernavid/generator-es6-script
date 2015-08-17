@@ -29,6 +29,7 @@ module.exports = yo.Base.extend({
     dependencies: function () {
         this.npmInstall('gulp');
         this.npmInstall('gulp-babel');
+        this.npmInstall('gulp-mocha', { saveDev: true });
         this.npmInstall('gulp-sourcemaps');
         this.npmInstall('gulp-util');
     }
