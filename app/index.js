@@ -18,6 +18,7 @@ module.exports = yo.Base.extend({
         this.copy('src', 'src');
         this.copy('tasks', 'tasks');
         this.copy('tools', 'tools');
+        this.copy('tests', 'tests');
         this.copy('index.js', 'index.js');
         this.copy('_gitignore', '.gitignore');
         this.copy('Gulpfile.js', 'Gulpfile.js');
