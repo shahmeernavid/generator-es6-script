@@ -18,7 +18,6 @@ module.exports = yo.Base.extend({
         this.copy('src', 'src');
         this.copy('tasks', 'tasks');
         this.copy('tools', 'tools');
-        this.copy('tests', 'tests');
         this.copy('index.js', 'index.js');
         this.copy('_gitignore', '.gitignore');
         this.copy('Gulpfile.js', 'Gulpfile.js');
@@ -33,5 +32,6 @@ module.exports = yo.Base.extend({
         this.npmInstall('gulp-mocha', { saveDev: true });
         this.npmInstall('gulp-sourcemaps');
         this.npmInstall('gulp-util');
+        this.npmInstall('source-map-support');
     }
 });
