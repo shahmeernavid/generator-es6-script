@@ -27,11 +27,11 @@ module.exports = yo.Base.extend({
     },
 
     dependencies: function () {
-        this.npmInstall('gulp');
-        this.npmInstall('gulp-babel');
+        this.npmInstall('gulp', {save: true});
+        this.npmInstall('gulp-babel', {save: true});
         this.npmInstall('gulp-mocha', { saveDev: true });
-        this.npmInstall('gulp-sourcemaps');
-        this.npmInstall('gulp-util');
-        this.npmInstall('source-map-support');
+        this.npmInstall('gulp-sourcemaps', {save: true});
+        this.npmInstall('gulp-util', {save: true});
+        this.npmInstall('source-map-support', {save: true});
     }
 });
